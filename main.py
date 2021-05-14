@@ -71,7 +71,7 @@ async def on_ready():
 async def on_message(message):
   if(message.author==client.user):
     return
-  elif(message.content.lower().startswith("~hi")):
+  elif(message.content.lower().startswith("~hi") or message.content.lower().startswith("~hello") ):
     embed=discord.Embed(
     title="CriJoQuotiFy",
     description="Hello!,{0}\nMy Name is Crijoquotify.\nI am a Bot.\nI can tell you live Cricket scores,I can tell you an Inspiring quote Also I can tell you a joke.\nSo tell me,How can i help you??\nType '~Help' For Making be able to Talk to you.".format(message.author.mention),
